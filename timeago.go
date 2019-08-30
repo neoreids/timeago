@@ -107,45 +107,45 @@ func localizedStringFor(valueType DateAgoValues, value int) string {
     switch valueType {
         case YearsAgo:
             if value >= 2 {
-                return fmt.Sprintf("%d years ago", value);
+                return fmt.Sprintf("%d tahun lalu", value);
             } else {
-                return "Last year";
+                return "Tahun lalu";
             }
         case MonthsAgo:
             if value >= 2 {
-                return fmt.Sprintf("%d months ago", value);
+                return fmt.Sprintf("%d bulan lalu", value);
             } else {
-                return "Last month";
+                return "Bulan lalu";
             }
         case WeeksAgo:
             if value >= 2 {
-                return fmt.Sprintf("%d weeks ago", value);
+                return fmt.Sprintf("%d minggu lalu", value);
             } else {
-                return "Last week";
+                return "Minggu lalu";
             }
         case DaysAgo:
             if value >= 2 {
-                return fmt.Sprintf("%d days ago", value);
+                return fmt.Sprintf("%d hari lalu", value);
             } else {
-                return "Yesterday";
+                return "Kemarin";
             }
         case HoursAgo:
             if value >= 2 {
-                return fmt.Sprintf("%d hours ago", value);
+                return fmt.Sprintf("%d jam lalu", value);
             } else {
-                return "An hour ago";
+                return "1 jam lalu";
             }
         case MinutesAgo:
             if value >= 2 {
-                return fmt.Sprintf("%d minutes ago", value);
+                return fmt.Sprintf("%d menit lalu", value);
             } else {
-                return "A minute ago";
+                return "1 menit lalu";
             }
         case SecondsAgo:
             if value >= 2 {
-                return fmt.Sprintf("%d seconds ago", value);
+                return fmt.Sprintf("%d detik lalu", value);
             } else {
-                return "Just now";
+                return "Baru saja";
             }
     }
     return "";
